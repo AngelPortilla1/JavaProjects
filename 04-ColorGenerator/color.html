@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="color.css">
+    <title>RGB COLORS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="colordisplay" id="colorDisplay"></div>
+        <div class="sliders">
+            <label for="red">R
+                <input type="range" id="red" name="red" min="0" max="255" value="0">
+            </label>
+            <label for="green">G
+                <input type="range" id="green" name="green" min="0" max="255" value="0">
+            </label>
+            <label for="blue">B
+                <input type="range" id="blue" name="blue" min="0" max="255" value="0">
+            </label>
+        </div>
+        <p id="rgbValue">RGB(0, 0, 0)</p>
+        <button id="copyButton">Copiar RGN</button>
+
+    </div>
+    
+</body>
+<script src="color.js"></script>
+</html>
