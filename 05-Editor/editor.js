@@ -7,7 +7,7 @@ const output = document.getElementById('output');
 
 runbutton.addEventListener('click', runCode);
 
-
+//funcion para correr el codigo
 function runCode(){
     const code = codeEditor.value;
 
