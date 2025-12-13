@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agenda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <title>Agenda</title>
+
+</head>
+<body>
+    <header>
+        <h1>My Agenda</h1>
+    </header>
+
+
+    <section class="add-contact">
+        <h2>Agregar contacto</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="phone" placeholder="Teléfono" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+
+    <section class="search-contact">
+        <input type="text" id="search" placeholder="Buscar por nombre">
+
+    <section class="contact-list">
+        <ul id="contacts">
+            <!-- Los contactos se agregarán aquí dinámicamente -->
+        </ul>
+    
+</body>
+<script src="agenda.js"></script>
+</html>

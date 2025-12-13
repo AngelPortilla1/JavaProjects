@@ -1,0 +1,66 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+    font-family: "Chewy", system-ui;
+    margin : 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color : #333;
+}
+
+
+header{
+    background-color: #476a6f;
+    color : white;
+    text-align: center;
+    padding : 1rem 0;
+    box-shadow : 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+
+.add-contact, .search-contact, .contact-list{
+    max-width: 450px;
+    margin : 1rem;
+    padding : 1rem;
+    background-color: white;
+    border-radius : 8px;
+    box-shadow : 0px 3px 10px rgba(0,0,0,0.1);
+    
+}
+
+
+input, button{
+    padding : 0.5rem;
+    margin-right : 0.5rem;
+    border : 1px solid #ccc;
+    border-radius : 4px;
+    font-size : 1rem;
+    Border: none;
+}
+
+
+button{
+    background-color: #476a6f;
+    color : white;
+    cursor : pointer;
+}
+
+
+input{
+    background-color: #f7fafc;
+    color : #2d3748;
+    outline: none;
+    border : 1px solid #ccc;
+    margin-top: 7px;
+}
+
+
+input:focus{
+    border-color : #476a6f;
+}
+
