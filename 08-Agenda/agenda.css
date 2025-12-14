@@ -1,12 +1,8 @@
-.chewy-regular {
-  font-family: "Chewy", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 
 body{
-    font-family: "Chewy", system-ui;
+    font-family: "Oufit", system-ui;
     margin : 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -30,6 +26,8 @@ header{
     background-color: white;
     border-radius : 8px;
     box-shadow : 0px 3px 10px rgba(0,0,0,0.1);
+    margin: 1rem auto;
+
     
 }
 
@@ -40,7 +38,7 @@ input, button{
     border : 1px solid #ccc;
     border-radius : 4px;
     font-size : 1rem;
-    Border: none;
+    
 }
 
 
@@ -64,3 +62,34 @@ input:focus{
     border-color : #476a6f;
 }
 
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+button:hover{
+    background-color: #365a5f;
+    transform: translate(0);
+}
+
+input[type="number"]{
+    appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    background-color: #f7fafc;
+}
+
+
+#contacts li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background-color: #f7fafc;
+    border-radius: 4px;
+}
