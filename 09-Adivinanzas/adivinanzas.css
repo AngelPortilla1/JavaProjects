@@ -1,4 +1,111 @@
+/* General */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column; /* Para que el marcador quede arriba */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 70%, #020617 100%);
+    color: #f9fafb;
+    overflow: hidden;
+}
 
-body{
+/* Marcador de puntuación */
+.score-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.2rem;
+    background: rgba(30, 41, 59, 0.7);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(56, 189, 248, 0.3); /* Azul tenue */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+#correctCount {
+    color: #38bdf8; /* Color cian para destacar el número */
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+}
+
+/* Contenedor Principal */
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 
+                inset 0 0 20px rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #f1f5f9, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+    margin-bottom: 30px;
+}
+
+.riddle {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Inputs y Botones */
+input[type="text"] {
+    width: 80%;
+    padding: 12px 20px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #0f172a;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+/* Feedback de resultado */
+#result {
+    margin-top: 20px;
+    height: 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
