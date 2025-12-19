@@ -13,12 +13,17 @@
 
     <div class="container">
         <h1> ADIVINGAME</h1>
-        <p class="riddle"></p>
+        <p id="riddle"></p>
         <input type="text" id="answer-input" placeholder="Tu respuesta..">
-        <button  onclick="checkAnswer()">Responder</button>
-        <p id="result"></p>
+        <button onclick="checkAnswer()">Responder</button>
+    </div>
 
-        
+    <!-- Modal de Feedback -->
+    <div id="feedback-modal" class="feedback-modal">
+        <div class="feedback-content" id="feedback-content">
+            <div class="feedback-icon" id="feedback-icon">✓</div>
+            <p id="feedback-message">¡Correcto!</p>
+        </div>
     </div>
 
     <script src="adivinanzas.js"></script>
